@@ -77,7 +77,7 @@
         return URL.createObjectURL(blob);
     }
 
-Promise.all([fetch("https://cdn.jsdelivr.net/gh/freebuisness/assets@main/game-recovery/they-are-coming.wasm").then(r=>r.blob()).then(blob=>URL.createObjectURL(blob)),fetch(config.dataUrl).then(r=>r.blob()).then(blob=>URL.createObjectURL(blob))]).then(([blobUrl,dataUrl]) => {
+Promise.all([fetch("https://rawcdn.githack.com/freebuisness/assets/main/game-recovery/they-are-coming.wasm").then(r=>r.blob()).then(blob=>URL.createObjectURL(blob)),fetch(config.dataUrl).then(r=>r.blob()).then(blob=>URL.createObjectURL(blob))]).then(([blobUrl,dataUrl]) => {
  config.dataUrl=dataUrl;
     config.codeUrl = blobUrl;
 
